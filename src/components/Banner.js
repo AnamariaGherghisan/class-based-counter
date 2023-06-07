@@ -1,10 +1,13 @@
-export const Banner = () => {
+
+import React from "react";
+
+export const Banner = ({ title, subTitle }) => {
   return (
-  <div className="jumbotron">
-      <div className="title">React Counter</div>
-      <div className="sub-title">
-        Please use the buttons to interact with your counter
-        </div>
-  </div>
+    <div className="jumbotron">
+      <div className="title">{title}</div>
+      <div className="sub-title">{subTitle}</div>
+    </div>
   );
 };
+
+export default Banner;
